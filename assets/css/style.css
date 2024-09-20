@@ -1,0 +1,213 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header with blue background */
+header {
+    background-color: #2c3e50;
+    /* Matching the navigation bar */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    /* Larger title */
+    margin-bottom: 10px;
+}
+
+/* Profile Picture */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* General styling for sections */
+.section {
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section hr {
+    border: none;
+    height: 2px;
+    background-color: #2980b9;
+    margin: 15px 0;
+}
+
+/* Personal Info */
+.personal-info p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    /* Larger text */
+}
+
+/* Education & Experience */
+.education,
+.experience {
+    padding: 0;
+    list-style: none;
+}
+
+.education tr,
+.experience ol li {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    /* Larger text */
+}
+
+.education td {
+    padding: 8px 0;
+    vertical-align: top;
+}
+
+.education td:first-child {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Links and buttons */
+a {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 24px;
+    /* Larger buttons */
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* Larger text for links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #3498db;
+}
+
+a.center-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.5rem;
+    /* Larger text for navigation */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* Projects */
+.project {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    /* Larger text */
+    color: #2c3e50;
+}
+
+.project p {
+    color: #555;
+    font-size: 1.3rem;
+    /* Larger text */
+}
+
+/* Button Styles */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    /* Larger buttons */
+    font-size: 1.2rem;
+    /* Larger text */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,184 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>Curriculum Vitae - Jorge Ricardo Darderes Gómez</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#education">Educación</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+        </ul>
+    </nav>
+
     <h1>Jorge Ricardo Darderes Gómez</h1>
-    <img src="./assets/img/picture.jpg" width="150" height="200" alt="image profile">
-    <h2>Datos personales</h2>
-    <hr>
-    <p><strong>Fecha de nacimiento:</strong> 26 de junio de 1986</p>
-    <p><strong>Edad:</strong> 38 años</p>
-    <p><strong>Nacionalidad:</strong> Chilena</p>
-    <p><strong>Telefono: </strong><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
-            alt="Bandera de Chile" width="20px"> +56 9 67978621</p>
-    <p><strong>Email:</strong>jdarderes@gmail.com </p>
-    <br>
-    <br>
-    <h2>Sobre mí</h2>
-    <hr>
-    <p>Soy un desarrollador apasionado por la tecnología y la programación. Me encanta aprender nuevas tecnologías y<br>
-        aplicar mis conocimientos en proyectos interesantes. Aquí encontrarás algunos de los proyectos en los que
-        he trabajado y <br> las tecnologías que utilizo.</p>
-    <br>
-    <br>
-    <h2>Educación</h2>
-    <hr>
-    <table>
-        <!-- como estudiante entiendo que se puede mejorar la presentación de la tabla con estilos css , por tema estetico 
-        se utiliza el carater de espacio en blanco &#8201; para dar un margen a la izquierda de la tabla . -->
-        <tr>
-            <td>2021 - 2021</td>
-            <td><strong>&#8201;&#8201;IoT Fundamentals: Big Data & Analytics</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Cisco Networking Academy, Online</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2021 - 2021</td>
-            <td><strong>&#8201;&#8201;Herramientas avanzadas de programación en Python para procesamiento de
-                    datos</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Pontificia Universidad Católica de Chile, Santiago(Online)</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2020 - 2020</td>
-            <td><strong>&#8201;&#8201;Programming Essentials in Python</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Cisco Networking Academy, Online</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2019 - 2019</td>
-            <td><strong>&#8201;&#8201;Introducción a Data Science: Programación Estadística con R </strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Universidad Nacional Autónoma de México, México(Online)</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2019 - 2019</td>
-            <td><strong>&#8201;&#8201;Herramientas de programación en Python para procesamiento de datos</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Pontificia Universidad Católica de Chile, Santiago(Online)</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2018 - 2018</td>
-            <td><strong>&#8201;&#8201;Data Management and Analitycs</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;BSG Institute, Peru(Online)</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2015 - 2015</td>
-            <td><strong>&#8201;&#8201;Postítulo Desarrollo de Aplicaciones Móviles</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Inacap, Santiago</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2014 - 2014</td>
-            <td><strong>&#8201;&#8201;Curso de Seguridad Informática Avanzada - Cisco CCNA Security</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;Tecnológico de Monterrey, Ciudad de Mexico(Presencial)</td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td>2006 - 2010</td>
+    <img src="./assets/img/picture.jpg" alt="Imagen de perfil" width="150" height="200">
 
-            <td><strong>&#8201;&#8201;Ingeniería en Informática</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#8201;&#8201;IP Inacap, Puerto Montt</td>
-        </tr>
-    </table>
+    <div class="section personal-info" id="about">
+        <h2>Datos personales</h2>
+        <hr>
+        <p><strong>Fecha de nacimiento:</strong> 26 de junio de 1986</p>
+        <p><strong>Edad:</strong> 38 años</p>
+        <p><strong>Nacionalidad:</strong> Chilena</p>
+        <p><strong>Teléfono:</strong> +56 9 67978621</p>
+        <p><strong>Email:</strong> jdarderes@gmail.com</p>
+    </div>
+
+    <div class="section about">
+        <h2>Sobre mí</h2>
+        <hr>
+        <p>Soy un desarrollador apasionado por la tecnología y la programación. Me encanta aprender nuevas tecnologías y
+            aplicar mis conocimientos en proyectos interesantes.</p>
+    </div>
+
+    <div class="section education" id="education">
+        <h2>Educación</h2>
+        <hr>
+        <table class="education">
+            <tr>
+                <td>2021 - 2021</td>
+                <td><strong>IoT Fundamentals: Big Data & Analytics</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cisco Networking Academy, Online</td>
+            </tr>
+            <tr>
+                <td>2020 - 2020</td>
+                <td><strong>Programming Essentials in Python</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cisco Networking Academy, Online</td>
+            </tr>
+            <!-- Añade más elementos de educación aquí -->
+        </table>
+    </div>
+
+    <div class="section experience" id="experience">
+        <h2>Experiencia Laboral</h2>
+        <hr>
+        <ol>
+            <li>
+                <strong>Desarrollador Full Stack</strong>
+                <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
+                <p><strong>Fecha:</strong> 2020 - Actualidad</p>
+                <p><strong>Descripción:</strong> Desarrollo de aplicaciones web y móviles para clientes de la empresa.
+                    Trabajo en equipo con otros desarrolladores y diseñadores.</p>
+            </li>
+            <!-- Añade más experiencia aquí -->
+        </ol>
+    </div>
 
     <br>
-    <br>
-    <h2>Tecnologías y Herramientas</h2>
-    <hr>
+    <div style="text-align:center;">
+        <a href="portafolio.html">Ver Portafolio</a>
+    </div>
 
-    <ul>
-        <li><strong>Lenguajes de Programación:</strong> JavaScript, Python, Java, C#, Dart</li>
-        <li><strong>Frameworks y Librerías:</strong> React, Django, .NET Core, Flutter</li>
-        <li><strong>Bases de Datos:</strong> MySQL, PostgreSQL, MongoDB, SQL SERVER</li>
-        <li><strong>Control de Versiones: </strong>Git, GitHub</li>
-        <li><strong>Cloud :</strong> Azure,Google Cloud, SupaBase</li>
-        <li><strong>Otras Herramientas:</strong> VS Code , Pycharm, Android Studio , Visual Studio</li>
-    </ul>
-    <br>
-    <br>
-    <h2>Experiencia Laboral</h2>
-    <hr>
-    <ol>
-        <li>
-            <strong>Desarrollador Full Stack</strong>
-            <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
-            <p><strong>Fecha:</strong> 2020 - Actualidad</p>
-            <p><strong>Descripción:</strong> Desarrollo de aplicaciones web y móviles para clientes de la empresa.
-                Trabajo
-                en equipo con otros desarrolladores y diseñadores.</p>
-        </li>
-        <li>
-            <strong>Desarrollador Frontend</strong>
-            <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
-            <p><strong>Fecha:</strong> 2018 - 2020</p>
-            <p><strong>Descripción:</strong> Desarrollo de interfaces de usuario para aplicaciones web. Trabajo en
-                equipo
-                con diseñadores y otros desarrolladores.</p>
-        </li>
-        <li>
-            <strong>Desarrollador Móvil</strong>
-            <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
-            <p><strong>Fecha:</strong> 2015 - 2018</p>
-            <p><strong>Descripción:</strong> Desarrollo de aplicaciones móviles para clientes de la empresa. Trabajo en
-                equipo con otros desarrolladores y diseñadores.</p>
-        </li>
-    </ol>
-    <br>
-    <br>
-    <a href="../curriculum_vitae/portafolio.html">Portafolio</a>
-
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jorge Ricardo Darderes Gómez | Contacto: jdarderes@gmail.com</p>
+    </footer>
 </body>
 
 </html>

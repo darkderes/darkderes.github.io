@@ -41,6 +41,7 @@ img {
 /* General styling for sections */
 .section {
     margin-bottom: 50px;
+    margin-left: 50px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -52,6 +53,14 @@ img {
     height: 2px;
     background-color: #2980b9;
     margin: 15px 0;
+}
+
+.sobre-mi p {
+    font-size: 1.3rem;
+    /* Incremento del tamaño del texto */
+    margin-bottom: 15px;
+    line-height: 1.8;
+    /* Mejora el espacio entre líneas */
 }
 
 /* Personal Info */
@@ -68,16 +77,49 @@ img {
     list-style: none;
 }
 
-.education tr,
-.experience ol li {
+.education h2 {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.experience h2 {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.education tr {
     margin-bottom: 15px;
     font-size: 1.3rem;
     /* Larger text */
 }
 
+.experiencia-laboral {
+    margin-bottom: 40px;
+    /* Espacio inferior para separar las secciones */
+}
+
+.experiencia-laboral ol {
+    margin-left: 20px;
+    /* Añadir margen izquierdo a la lista */
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    /* Espacio debajo de la lista */
+}
+
+.experiencia-laboral li {
+    margin-bottom: 15px;
+    /* Espacio entre cada ítem de la lista */
+}
+
+.experiencia-laboral p {
+    margin-bottom: 5px;
+    /* Espacio entre los párrafos de cada ítem */
+}
+
 .education td {
-    padding: 8px 0;
+    padding: 15px;
     vertical-align: top;
+
 }
 
 .education td:first-child {
@@ -129,7 +171,6 @@ nav ul li {
 nav ul li a {
     color: white;
     font-size: 1.5rem;
-    /* Larger text for navigation */
     text-decoration: none;
 }
 

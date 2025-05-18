@@ -1,258 +1,246 @@
-/* Global styles */
+/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #3b82f6;
+  --text-color: #1f2937;
+  --light-bg: #f3f4f6;
+  --white: #ffffff;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
+  background-color: var(--light-bg);
+  color: var(--text-color);
   line-height: 1.6;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Header with blue background */
+/* Encabezado con gradiente */
 header {
-  background-color: #2c3e50;
-  /* Matching the navigation bar */
-  color: white;
-  padding: 20px 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white);
+  padding: 40px 0;
   text-align: center;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
 }
 
 header h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
-  /* Larger title */
   margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Profile Picture */
+/* Imagen de perfil */
 img {
   display: block;
   margin: 20px auto;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
+  box-shadow: var(--shadow);
+  max-width: 200px;
   height: auto;
+  border: 4px solid var(--white);
+  transition: transform 0.3s ease;
 }
 
-/* General styling for sections */
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos generales para secciones */
 .section {
   margin-bottom: 50px;
-  margin-left: 0;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
 }
 
 .section hr {
   border: none;
-  height: 2px;
-  background-color: #2980b9;
-  margin: 15px 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  margin: 20px 0;
+  border-radius: 3px;
 }
 
-.sobre-mi p {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  /* Incremento del tamaño del texto */
-  margin-bottom: 15px;
-  line-height: 1.8;
-  /* Mejora el espacio entre líneas */
-}
-
-/* Personal Info */
+/* Información personal */
 .personal-info p {
-  margin-bottom: 10px;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  /* Larger text */
+  margin-bottom: 15px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Education & Experience */
-.education,
-.experience {
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  overflow-x: auto;
+.personal-info p strong {
+  color: var(--primary-color);
+  min-width: 150px;
 }
 
+/* Educación y Experiencia */
 .education table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 10px;
 }
 
 .education tr {
-  margin-bottom: 15px;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  /* Larger text */
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.experiencia-laboral {
-  margin-bottom: 40px;
-  /* Espacio inferior para separar las secciones */
-}
-
-.experiencia-laboral ol {
-  margin-left: 20px;
-  /* Añadir margen izquierdo a la lista */
-  margin-bottom: 20px;
-  font-size: 1.3rem;
-  /* Espacio debajo de la lista */
-}
-
-.experiencia-laboral li {
-  margin-bottom: 15px;
-  /* Espacio entre cada ítem de la lista */
-}
-
-.experiencia-laboral p {
-  margin-bottom: 5px;
-  /* Espacio entre los párrafos de cada ítem */
+.education tr:hover {
+  transform: translateX(10px);
 }
 
 .education td {
-  padding: 15px;
-  vertical-align: top;
+  padding: 20px;
+  vertical-align: middle;
 }
 
 .education td:first-child {
-  color: #2980b9;
-  font-weight: bold;
+  color: var(--primary-color);
+  font-weight: 600;
   white-space: nowrap;
 }
 
-/* Links and buttons */
-a {
-  display: inline-block;
-  background-color: #2980b9;
-  color: white;
-  padding: 12px 24px;
-  /* Larger buttons */
-  text-decoration: none;
-  font-size: 1.2rem;
-  /* Larger text for links */
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+/* Experiencia laboral */
+.experiencia-laboral ol {
+  list-style-position: inside;
+  padding-left: 0;
 }
 
-a:hover {
-  background-color: #3498db;
+.experiencia-laboral li {
+  background-color: var(--light-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-a.center-button {
+.experiencia-laboral li:hover {
+  transform: translateX(10px);
+}
+
+.experiencia-laboral strong {
+  color: var(--primary-color);
   display: block;
-  text-align: center;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
-/* Navigation bar */
+/* Barra de navegación */
 nav {
-  background-color: #2c3e50;
-  padding: 15px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 20px;
   margin-bottom: 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
 }
 
 nav ul {
   list-style: none;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-}
-
-nav ul li {
-  margin: 0;
+  gap: 20px;
 }
 
 nav ul li a {
-  color: white;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--white);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav ul li a:hover {
-  background-color: #34495e;
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
-/* Footer */
+/* Enlaces y botones */
+a {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  color: var(--white);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pie de página */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #2c3e50;
-  color: white;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white);
   margin-top: 50px;
-  border-radius: 10px;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
 }
 
-/* Projects */
-.project {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.project img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.project h3 {
-  margin-top: 15px;
-  font-size: 1.8rem;
-  /* Larger text */
-  color: #2c3e50;
-}
-
-.project p {
-  color: #555;
-  font-size: 1.3rem;
-  /* Larger text */
-}
-
-/* Button Styles */
-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  /* Larger buttons */
-  font-size: 1.2rem;
-  /* Larger text */
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #2980b9;
-}
-
-/* Responsive adjustments */
+/* Ajustes responsivos */
 @media (max-width: 768px) {
   body {
     padding: 10px;
   }
 
   .section {
-    margin-left: 0;
-    padding: 15px;
+    padding: 20px;
   }
 
   nav ul {
@@ -262,7 +250,7 @@ button:hover {
 
   nav ul li a {
     display: block;
-    padding: 10px;
+    text-align: center;
   }
 
   .education td {
@@ -271,16 +259,11 @@ button:hover {
   }
 
   .education td:first-child {
-    font-weight: bold;
     margin-bottom: 5px;
   }
 
-  .experiencia-laboral ol {
-    padding-left: 20px;
-  }
-
   .experiencia-laboral li {
-    margin-bottom: 20px;
+    padding: 15px;
   }
 }
 
@@ -290,7 +273,7 @@ button:hover {
   }
 
   .section {
-    padding: 10px;
+    padding: 15px;
   }
 
   img {
@@ -298,16 +281,21 @@ button:hover {
     height: 150px;
   }
 
-  .education td,
-  .experiencia-laboral p {
-    font-size: 0.9rem;
+  .personal-info p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .personal-info p strong {
+    min-width: auto;
   }
 }
 
-/* Print styles */
+/* Estilos para impresión */
 @media print {
   body {
-    background-color: white;
+    background-color: var(--white);
     padding: 0;
   }
 
@@ -323,7 +311,9 @@ button:hover {
 
   a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
+    background: none;
+    box-shadow: none;
   }
 
   footer {

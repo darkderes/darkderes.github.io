@@ -1,129 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae - Jorge Ricardo Darderes Gómez</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Barra de navegación -->
     <nav>
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#education">Educación</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i> Sobre mí</a>
+        </li>
+        <li>
+          <a href="#education"
+            ><i class="fas fa-graduation-cap"></i> Educación</a
+          >
+        </li>
+        <li>
+          <a href="#experience"><i class="fas fa-briefcase"></i> Experiencia</a>
+        </li>
+        <li>
+          <a href="portafolio.html"><i class="fas fa-folder"></i> Portafolio</a>
+        </li>
+      </ul>
     </nav>
 
-    <h1>Jorge Ricardo Darderes Gómez</h1>
-    <img src="./assets/img/picture.jpg" alt="Imagen de perfil" width="150" height="200">
+    <header>
+      <h1>Jorge Ricardo Darderes Gómez</h1>
+      <img src="./assets/img/picture.jpg" alt="Imagen de perfil" />
+    </header>
 
     <div class="section personal-info" id="about">
-        <h2>Datos personales</h2>
-        <hr>
-        <p><strong>Fecha de nacimiento:</strong> 26 de junio de 1986</p>
-        <p><strong>Edad:</strong> 38 años</p>
-        <p><strong>Nacionalidad:</strong> Chilena</p>
-        <p><strong>Teléfono:</strong> +56 9 67978621</p>
-        <p><strong>Email:</strong> jdarderes@gmail.com</p>
+      <h2><i class="fas fa-info-circle"></i> Datos personales</h2>
+      <hr />
+      <p><strong>Fecha de nacimiento:</strong> 26 de junio de 1986</p>
+      <p><strong>Edad:</strong> 38 años</p>
+      <p><strong>Nacionalidad:</strong> Chilena</p>
+      <p>
+        <strong>Teléfono:</strong>
+        <a href="tel:+56967978621"
+          ><i class="fas fa-phone"></i> +56 9 67978621</a
+        >
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:jdarderes@gmail.com"
+          ><i class="fas fa-envelope"></i> jdarderes@gmail.com</a
+        >
+      </p>
     </div>
 
-    <section class="sobre-mi section">
-        <h2>Sobre mí</h2>
-        <hr>
-        <p>
-            Soy Jorge Ricardo Darderes Gómez, desarrollador de software con experiencia en diversas tecnologías y un
-            enfoque en crear soluciones eficientes y elegantes. Me apasiona el desarrollo web y móvil, con proyectos que
-            van desde sistemas corporativos hasta aplicaciones para dispositivos móviles.
-        </p>
+    <section class="section sobre-mi">
+      <h2><i class="fas fa-user-circle"></i> Sobre mí</h2>
+      <hr />
+      <p>
+        Soy Jorge Ricardo Darderes Gómez, desarrollador de software con
+        experiencia en diversas tecnologías y un enfoque en crear soluciones
+        eficientes y elegantes. Me apasiona el desarrollo web y móvil, con
+        proyectos que van desde sistemas corporativos hasta aplicaciones para
+        dispositivos móviles.
+      </p>
     </section>
 
-
-    <div class="education section" id="education">
-        <h2>Educación</h2>
-        <hr>
-        <table class="education">
-            <tr>
-                <td>2021 - 2021</td>
-                <td><strong>IoT Fundamentals: Big Data & Analytics</strong></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Cisco Networking Academy, Online</td>
-            </tr>
-            <tr>
-                <td>2020 - 2020</td>
-                <td><strong>Programming Essentials in Python</strong></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Cisco Networking Academy, Online</td>
-            </tr>
-            <tr>
-                <td>2015 - 2015</td>
-                <td><strong>Postítulo Desarrollo de Aplicaciones Móviles</strong></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Inacap, Santiago</td>
-            </tr>
-            <tr>
-                <td>2006 - 2010</td>
-                <td><strong>Ingeniería en Informática</strong></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>IP Inacap, Puerto Montt</td>
-            </tr>
-        </table>
+    <div class="section education" id="education">
+      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+      <hr />
+      <table class="education">
+        <tr>
+          <td>2021 - 2021</td>
+          <td>
+            <strong>IoT Fundamentals: Big Data & Analytics</strong><br />
+            Cisco Networking Academy, Online
+          </td>
+        </tr>
+        <tr>
+          <td>2020 - 2020</td>
+          <td>
+            <strong>Programming Essentials in Python</strong><br />
+            Cisco Networking Academy, Online
+          </td>
+        </tr>
+        <tr>
+          <td>2015 - 2015</td>
+          <td>
+            <strong>Postítulo Desarrollo de Aplicaciones Móviles</strong><br />
+            Inacap, Santiago
+          </td>
+        </tr>
+        <tr>
+          <td>2006 - 2010</td>
+          <td>
+            <strong>Ingeniería en Informática</strong><br />
+            IP Inacap, Puerto Montt
+          </td>
+        </tr>
+      </table>
     </div>
 
-    <div class="section experiencia-laboral " id="experience">
-        <h2>Experiencia Laboral</h2>
-        <hr>
-        <ol>
-            <li>
-                <strong>Desarrollador Full Stack</strong>
-                <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
-                <p><strong>Fecha:</strong> 2020 - Actualidad</p>
-                <p><strong>Descripción:</strong> Desarrollo de aplicaciones web y móviles para clientes de la empresa.
-                    Trabajo en equipo con otros desarrolladores y diseñadores.</p>
-            </li>
-            <hr>
-            <li>
-                <strong>Desarrollador Frontend</strong>
-                <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
-                <p><strong>Fecha:</strong> 2018 - 2020</p>
-                <p><strong>Descripción:</strong> Desarrollo de interfaces de usuario para aplicaciones web. Trabajo en
-                    equipo
-                    con diseñadores y otros desarrolladores.</p>
-            </li>
-            <hr>
-            <li>
-                <strong>Desarrollador Móvil</strong>
-                <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
-                <p><strong>Fecha:</strong> 2015 - 2018</p>
-                <p><strong>Descripción:</strong> Desarrollo de aplicaciones móviles para clientes de la empresa. Trabajo
-                    en
-                    equipo con otros desarrolladores y diseñadores.</p>
-            </li>
-            <!-- Añade más experiencia aquí -->
-        </ol>
+    <div class="section experiencia-laboral" id="experience">
+      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+      <hr />
+      <ol>
+        <li>
+          <strong>Desarrollador Full Stack</strong>
+          <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
+          <p><strong>Fecha:</strong> 2020 - Actualidad</p>
+          <p>
+            <strong>Descripción:</strong> Desarrollo de aplicaciones web y
+            móviles para clientes de la empresa. Trabajo en equipo con otros
+            desarrolladores y diseñadores.
+          </p>
+        </li>
+        <li>
+          <strong>Desarrollador Frontend</strong>
+          <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
+          <p><strong>Fecha:</strong> 2018 - 2020</p>
+          <p>
+            <strong>Descripción:</strong> Desarrollo de interfaces de usuario
+            para aplicaciones web. Trabajo en equipo con diseñadores y otros
+            desarrolladores.
+          </p>
+        </li>
+        <li>
+          <strong>Desarrollador Móvil</strong>
+          <p><strong>Empresa:</strong> Empresa de Desarrollo de Software</p>
+          <p><strong>Fecha:</strong> 2015 - 2018</p>
+          <p>
+            <strong>Descripción:</strong> Desarrollo de aplicaciones móviles
+            para clientes de la empresa. Trabajo en equipo con otros
+            desarrolladores y diseñadores.
+          </p>
+        </li>
+      </ol>
     </div>
 
-    <br>
-    <div style="text-align:center;">
-        <a href="portafolio.html">Ver Portafolio</a>
+    <div class="section" style="text-align: center">
+      <a href="portafolio.html" class="center-button"
+        ><i class="fas fa-folder-open"></i> Ver Portafolio</a
+      >
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Jorge Ricardo Darderes Gómez | Contacto: jdarderes@gmail.com</p>
+      <p>
+        &copy; 2024 Jorge Ricardo Darderes Gómez |
+        <a href="mailto:jdarderes@gmail.com"
+          ><i class="fas fa-envelope"></i> Contacto</a
+        >
+      </p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

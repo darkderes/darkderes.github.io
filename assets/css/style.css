@@ -212,32 +212,65 @@ img:hover {
   transform: translateY(-2px);
 }
 
-/* Educación y Experiencia */
-.education table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 10px;
+/* Educación */
+.education-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.education tr {
-  background-color: var(--light-bg);
+.education-category {
+  background: var(--card-bg);
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.education tr:hover {
-  transform: translateX(10px);
+.education-category h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.education-category h3 i {
+  font-size: 1.1rem;
+}
+
+.education {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .education td {
-  padding: 20px;
-  vertical-align: middle;
+  padding: 0.8rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .education td:first-child {
-  color: var(--primary-color);
-  font-weight: 600;
-  white-space: nowrap;
+  width: 120px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.education td:last-child {
+  padding-left: 1rem;
+}
+
+.education strong {
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.education small {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.3rem;
 }
 
 /* Experiencia laboral */
@@ -356,17 +389,16 @@ footer {
     text-align: center;
   }
 
-  .education td {
-    display: block;
-    width: 100%;
-  }
-
   .education td:first-child {
-    margin-bottom: 5px;
+    width: 100px;
   }
 
-  .experiencia-laboral li {
-    padding: 15px;
+  .education td {
+    padding: 0.6rem;
+  }
+
+  .education-category {
+    padding: 1rem;
   }
 
   .skills-grid,
@@ -397,6 +429,19 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
+  }
+
+  .education td:first-child {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+
+  .education td {
+    padding: 0.5rem;
+  }
+
+  .education-category h3 {
+    font-size: 1.1rem;
   }
 }
 

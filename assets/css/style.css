@@ -58,10 +58,11 @@ header .subtitle {
 img {
   display: block;
   margin: 20px auto;
-  border-radius: 50%;
+  border-radius: 16px;
   box-shadow: var(--shadow);
-  max-width: 200px;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border: 4px solid var(--white);
   transition: transform 0.3s ease;
 }
@@ -178,11 +179,15 @@ img:hover {
   background-color: var(--light-bg);
   padding: 20px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
+  filter: brightness(1.03) saturate(1.1);
 }
 
 .project-card h3 {
@@ -205,11 +210,45 @@ img:hover {
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color) 0%,
+    var(--primary-color) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
 }
 
 .project-link:hover {
   background-color: var(--accent-color);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.18);
+}
+
+.project-link:hover::after {
+  opacity: 0.18;
+}
+
+/* Animación para iconos dentro de los enlaces de proyecto */
+.project-link i {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover i {
+  transform: scale(1.2) rotate(-8deg);
 }
 
 /* Educación */
@@ -298,6 +337,20 @@ img:hover {
   font-size: 1.2rem;
 }
 
+.logo-empresa {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 2px 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e5e7eb;
+  object-fit: contain;
+  max-width: 90px;
+}
+
 /* Barra de navegación */
 nav {
   background: linear-gradient(
@@ -369,6 +422,65 @@ footer {
   transform: translateY(-3px);
 }
 
+/* Botones destacados en el header */
+.header-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.btn-cv,
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+.btn-cv {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: var(--white);
+}
+
+.btn-cv:hover {
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.18);
+}
+
+.btn-contact {
+  background: var(--white);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-contact:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.18);
+}
+
+.btn-cv i,
+.btn-contact i {
+  font-size: 1.1em;
+  transition: transform 0.3s;
+}
+
+.btn-cv:hover i,
+.btn-contact:hover i {
+  transform: scale(1.2) rotate(-8deg);
+}
+
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   body {
@@ -419,6 +531,7 @@ footer {
   img {
     width: 150px;
     height: 150px;
+    border-radius: 12px;
   }
 
   .contact-info {

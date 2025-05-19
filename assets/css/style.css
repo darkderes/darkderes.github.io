@@ -338,7 +338,8 @@ img:hover {
 }
 
 .logo-empresa {
-  height: 50px;
+  height: 32px;
+  max-width: 70px;
   width: auto;
   vertical-align: middle;
   margin-right: 8px;
@@ -348,7 +349,6 @@ img:hover {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
   border: 1px solid #e5e7eb;
   object-fit: contain;
-  max-width: 90px;
 }
 
 /* Barra de navegación */
@@ -388,6 +388,62 @@ nav ul li a {
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+}
+
+/* Selector de idioma con icono */
+.language-switcher {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 10;
+}
+.dropdown-lang {
+  position: relative;
+  display: inline-block;
+}
+.btn-lang-icon {
+  background: var(--white);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s, color 0.2s;
+}
+.btn-lang-icon:hover {
+  background: var(--accent-color);
+  color: var(--white);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: var(--white);
+  min-width: 80px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  margin-top: 8px;
+  z-index: 20;
+}
+.dropdown-lang:hover .dropdown-content,
+.dropdown-lang:focus-within .dropdown-content {
+  display: block;
+}
+.lang-option {
+  color: var(--primary-color);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-option:hover,
+.lang-option.active {
+  background: var(--accent-color);
+  color: var(--white);
 }
 
 /* Pie de página */
@@ -516,6 +572,11 @@ footer {
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .language-switcher {
+    top: 18px;
+    right: 16px;
   }
 }
 

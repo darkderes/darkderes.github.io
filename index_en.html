@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,47 +16,44 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
   <body>
-    <!-- Barra de navegación -->
+    <!-- Navigation Bar -->
     <nav>
       <ul>
         <li>
-          <a href="#about"><i class="fas fa-user"></i> Sobre mí</a>
+          <a href="#about"><i class="fas fa-user"></i> About Me</a>
         </li>
         <li>
-          <a href="#skills"><i class="fas fa-code"></i> Habilidades</a>
+          <a href="#skills"><i class="fas fa-code"></i> Skills</a>
         </li>
         <li>
           <a href="#projects"
-            ><i class="fas fa-project-diagram"></i> Proyectos</a
+            ><i class="fas fa-project-diagram"></i> Projects</a
           >
         </li>
         <li>
           <a href="#education"
-            ><i class="fas fa-graduation-cap"></i> Educación</a
+            ><i class="fas fa-graduation-cap"></i> Education</a
           >
         </li>
         <li>
-          <a href="#experience"><i class="fas fa-briefcase"></i> Experiencia</a>
+          <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
         </li>
       </ul>
     </nav>
-
     <header>
       <div class="language-switcher">
-        <div class="dropdown-lang">
-          <button class="btn-lang-icon" title="Cambiar idioma">
-            <i class="fas fa-globe"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="index.html" class="lang-option active">ES</a>
-            <a href="index_en.html" class="lang-option">EN</a>
-          </div>
-        </div>
+        <button
+          class="btn-lang"
+          id="btn-es"
+          onclick="window.location='index.html'"
+        >
+          ES
+        </button>
+        <button class="btn-lang active" id="btn-en">EN</button>
       </div>
       <h1>Jorge Ricardo Darderes Gómez</h1>
-      <p class="subtitle">Desarrollador Full Stack & Mobile</p>
+      <p class="subtitle">Full Stack & Mobile Developer</p>
       <div class="header-actions">
         <a
           href="./CV_JorgeDarderes.pdf"
@@ -64,29 +61,28 @@
           download
           target="_blank"
         >
-          <i class="fas fa-file-download"></i> Descargar CV
+          <i class="fas fa-file-download"></i> Download CV
         </a>
         <a href="mailto:jdarderes@gmail.com" class="btn-contact">
-          <i class="fas fa-envelope"></i> Contáctame
+          <i class="fas fa-envelope"></i> Contact Me
         </a>
       </div>
-      <img src="./assets/img/picture.jpg" alt="Imagen de perfil" />
+      <img src="./assets/img/picture.jpg" alt="Profile picture" />
     </header>
-
     <div class="section personal-info" id="about">
-      <h2><i class="fas fa-info-circle"></i> Sobre mí</h2>
+      <h2><i class="fas fa-info-circle"></i> About Me</h2>
       <hr />
       <p>
-        Soy un desarrollador autodidacta, proactivo y con una base técnica
-        sólida, especializado en desarrollo web y móvil. Con más de 97
-        repositorios públicos en GitHub, demuestro mi pasión por el aprendizaje
-        continuo y la resolución de problemas a través del código. Mi
-        experiencia abarca desde el desarrollo frontend hasta el backend,
-        incluyendo aplicaciones móviles multiplataforma.
+        I am a self-taught, proactive developer with a strong technical
+        background, specialized in web and mobile development. With more than 97
+        public repositories on GitHub, I demonstrate my passion for continuous
+        learning and problem-solving through code. My experience covers
+        everything from frontend to backend development, including
+        cross-platform mobile applications.
       </p>
       <div class="contact-info">
         <p>
-          <strong>Teléfono:</strong>
+          <strong>Phone:</strong>
           <a href="tel:+56967978621"
             ><i class="fas fa-phone"></i> +56 9 67978621</a
           >
@@ -105,13 +101,12 @@
         </p>
       </div>
     </div>
-
     <div class="section skills" id="skills">
-      <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+      <h2><i class="fas fa-code"></i> Technical Skills</h2>
       <hr />
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Lenguajes de Programación</h3>
+          <h3>Programming Languages</h3>
           <ul>
             <li><i class="fab fa-js"></i> JavaScript</li>
             <li><i class="fab fa-python"></i> Python</li>
@@ -122,7 +117,7 @@
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Frameworks & Tecnologías</h3>
+          <h3>Frameworks & Technologies</h3>
           <ul>
             <li><i class="fab fa-react"></i> React</li>
             <li><i class="fas fa-mobile-alt"></i> Flutter</li>
@@ -135,7 +130,7 @@
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Bases de Datos</h3>
+          <h3>Databases</h3>
           <ul>
             <li><i class="fas fa-database"></i> SQL Server</li>
             <li><i class="fas fa-database"></i> MongoDB</li>
@@ -144,233 +139,208 @@
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Metodologías & Herramientas</h3>
+          <h3>Methodologies & Tools</h3>
           <ul>
-            <li><i class="fas fa-code-branch"></i> Control de Versiones</li>
-            <li><i class="fas fa-tasks"></i> Desarrollo Ágil</li>
-            <li><i class="fas fa-book"></i> Documentación</li>
-            <li><i class="fas fa-mobile-alt"></i> Desarrollo Móvil</li>
-            <li><i class="fas fa-laptop-code"></i> Desarrollo Web</li>
+            <li><i class="fas fa-code-branch"></i> Version Control</li>
+            <li><i class="fas fa-tasks"></i> Agile Development</li>
+            <li><i class="fas fa-book"></i> Documentation</li>
+            <li><i class="fas fa-mobile-alt"></i> Mobile Development</li>
+            <li><i class="fas fa-laptop-code"></i> Web Development</li>
           </ul>
         </div>
       </div>
     </div>
-
     <div class="section projects" id="projects">
-      <h2><i class="fas fa-project-diagram"></i> Proyectos Destacados</h2>
+      <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
       <hr />
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Portafolio Personal</h3>
+          <h3>Personal Portfolio</h3>
           <p class="tech-stack">
             <i class="fas fa-tags"></i> HTML, CSS, JavaScript
           </p>
           <p>
-            Página web personal construida con HTML y actualizada regularmente,
-            mostrando mi evolución como desarrollador.
+            Personal website built with HTML and regularly updated, showcasing
+            my evolution as a developer.
           </p>
           <a
             href="https://github.com/darkderes/darkderes.github.io"
             target="_blank"
             rel="noopener"
             class="project-link"
+            ><i class="fab fa-github"></i> View on GitHub</a
           >
-            <i class="fab fa-github"></i> Ver en GitHub
-          </a>
         </div>
-
         <div class="project-card">
-          <h3>API REST con .NET Core</h3>
+          <h3>REST API with .NET Core</h3>
           <p class="tech-stack">
             <i class="fas fa-tags"></i> C#, .NET Core, Entity Framework
           </p>
           <p>
-            Desarrollo de una API RESTful utilizando .NET Core, implementando
-            arquitectura limpia y patrones de diseño.
+            Development of a RESTful API using .NET Core, implementing clean
+            architecture and design patterns.
           </p>
-          <a href="#" target="_blank" rel="noopener" class="project-link">
-            <i class="fab fa-github"></i> Ver en GitHub
-          </a>
+          <a href="#" target="_blank" rel="noopener" class="project-link"
+            ><i class="fab fa-github"></i> View on GitHub</a
+          >
         </div>
-
         <div class="project-card">
-          <h3>Zustand Mini Curso</h3>
+          <h3>Zustand Mini Course</h3>
           <p class="tech-stack">
             <i class="fas fa-tags"></i> TypeScript, Zustand
           </p>
           <p>
-            Curso práctico sobre gestión de estado con Zustand, compartiendo
-            conocimiento y buenas prácticas.
+            Practical course on state management with Zustand, sharing knowledge
+            and best practices.
           </p>
           <a
             href="https://github.com/darkderes/zustand-mini-curso"
             target="_blank"
             rel="noopener"
             class="project-link"
+            ><i class="fab fa-github"></i> View on GitHub</a
           >
-            <i class="fab fa-github"></i> Ver en GitHub
-          </a>
         </div>
-
         <div class="project-card">
           <h3>OpenCV Project</h3>
           <p class="tech-stack"><i class="fas fa-tags"></i> Python, OpenCV</p>
           <p>
-            Proyecto de visión por computador utilizando Python y OpenCV para
-            procesamiento de imágenes.
+            Computer vision project using Python and OpenCV for image
+            processing.
           </p>
           <a
             href="https://github.com/darkderes/OpenCvProject"
             target="_blank"
             rel="noopener"
             class="project-link"
+            ><i class="fab fa-github"></i> View on GitHub</a
           >
-            <i class="fab fa-github"></i> Ver en GitHub
-          </a>
         </div>
-
         <div class="project-card">
           <h3>Reclamos Anakena</h3>
           <p class="tech-stack"><i class="fas fa-tags"></i> Dart, Flutter</p>
           <p>
-            Aplicación multiplataforma desarrollada con Flutter para gestión de
-            reclamos.
+            Cross-platform application developed with Flutter for claims
+            management.
           </p>
           <a
             href="https://github.com/darkderes/reclamos_anakena-main"
             target="_blank"
             rel="noopener"
             class="project-link"
+            ><i class="fab fa-github"></i> View on GitHub</a
           >
-            <i class="fab fa-github"></i> Ver en GitHub
-          </a>
         </div>
       </div>
     </div>
-
     <div class="section education" id="education">
-      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
       <hr />
       <div class="education-categories">
         <div class="education-category">
-          <h3><i class="fas fa-university"></i> Educación Superior</h3>
+          <h3><i class="fas fa-university"></i> Higher Education</h3>
           <table class="education">
             <tr>
               <td>2007 - 2011</td>
               <td>
-                <strong>Ingeniería en Informática</strong><br />
-                INACAP, Puerto Montt
+                <strong>Computer Engineering</strong><br />INACAP, Puerto Montt
               </td>
             </tr>
           </table>
         </div>
-
         <div class="education-category">
-          <h3><i class="fas fa-certificate"></i> Postítulos y Diplomados</h3>
+          <h3><i class="fas fa-certificate"></i> Postgraduate & Diplomas</h3>
           <table class="education">
             <tr>
               <td>2022 - 2023</td>
               <td>
-                <strong>Diplomado en Python Profesional</strong><br />
-                Pontificia Universidad Católica de Chile
+                <strong>Professional Python Diploma</strong><br />Pontificia
+                Universidad Católica de Chile
               </td>
             </tr>
             <tr>
               <td>2015</td>
               <td>
-                <strong>Postítulo Desarrollo de Aplicaciones Móviles</strong
-                ><br />
-                INACAP, Santiago
+                <strong>Postgraduate in Mobile Application Development</strong
+                ><br />INACAP, Santiago
               </td>
             </tr>
           </table>
         </div>
-
         <div class="education-category">
-          <h3><i class="fas fa-laptop-code"></i> Cursos y Certificaciones</h3>
+          <h3><i class="fas fa-laptop-code"></i> Courses & Certifications</h3>
           <table class="education">
             <tr>
               <td>2024</td>
               <td>
-                <strong>Desarrollo Frontend con React</strong><br />
-                Desafío Latam
+                <strong>Frontend Development with React</strong><br />Desafío
+                Latam
               </td>
             </tr>
             <tr>
               <td>2023</td>
               <td>
                 <strong
-                  >Bootcamp Desarrollo de Aplicaciones Móviles con
-                  Flutter</strong
-                ><br />
-                Universidad del Desarrollo (UDD)
+                  >Mobile Application Development Bootcamp with Flutter</strong
+                ><br />Universidad del Desarrollo (UDD)
               </td>
             </tr>
             <tr>
               <td>2023</td>
               <td>
                 <strong
-                  >Herramientas para la gestión de proyectos aplicando
-                  metodologías Ágiles y Lean</strong
-                ><br />
-                Pontificia Universidad Católica de Chile
+                  >Tools for Project Management Applying Agile and Lean
+                  Methodologies</strong
+                ><br />Pontificia Universidad Católica de Chile
               </td>
             </tr>
             <tr>
               <td>2021</td>
               <td>
                 <strong
-                  >Herramientas avanzadas de programación en Python para
-                  procesamiento de datos</strong
-                ><br />
-                Pontificia Universidad Católica de Chile
+                  >Advanced Python Programming Tools for Data Processing</strong
+                ><br />Pontificia Universidad Católica de Chile
               </td>
             </tr>
             <tr>
               <td>2021</td>
               <td>
-                <strong>IoT Fundamentals: Big Data & Analytics</strong><br />
-                Cisco Networking Academy
+                <strong>IoT Fundamentals: Big Data & Analytics</strong
+                ><br />Cisco Networking Academy
               </td>
             </tr>
             <tr>
               <td>2020</td>
               <td>
-                <strong>Programming Essentials in Python</strong><br />
-                Cisco Networking Academy
+                <strong>Programming Essentials in Python</strong><br />Cisco
+                Networking Academy
+              </td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>
+                <strong>Python Programming Tools for Data Processing</strong
+                ><br />Pontificia Universidad Católica de Chile
               </td>
             </tr>
             <tr>
               <td>2019</td>
               <td>
                 <strong
-                  >Herramientas de programación en Python para procesamiento de
-                  datos</strong
-                ><br />
-                Pontificia Universidad Católica de Chile
-              </td>
-            </tr>
-            <tr>
-              <td>2019</td>
-              <td>
-                <strong
-                  >Introducción a Data Science: Programación Estadística con
+                  >Introduction to Data Science: Statistical Programming with
                   R</strong
-                ><br />
-                Universidad Nacional Autónoma de México
+                ><br />Universidad Nacional Autónoma de México
               </td>
             </tr>
             <tr>
               <td>2018</td>
               <td>
-                <strong>Data Management and Analytics</strong><br />
-                BSG Institute<br />
-                <small
-                  >• Curso 20466: Implementando Data Models e Informes con
+                <strong>Data Management and Analytics</strong><br />BSG
+                Institute<br /><small
+                  >• Course 20466: Implementing Data Models and Reports with
                   Microsoft SQLServer</small
-                ><br />
-                <small
-                  >• Curso 20467: Diseño de Soluciones BI con Microsoft
+                ><br /><small
+                  >• Course 20467: Designing BI Solutions with Microsoft
                   SQLServer 2014</small
                 >
               </td>
@@ -379,19 +349,16 @@
               <td>2014</td>
               <td>
                 <strong
-                  >Curso de Seguridad Informática Avanzada - Cisco CCNA
-                  Security</strong
-                ><br />
-                Tecnológico de Monterrey
+                  >Advanced IT Security Course - Cisco CCNA Security</strong
+                ><br />Tecnológico de Monterrey
               </td>
             </tr>
           </table>
         </div>
       </div>
     </div>
-
     <div class="section certifications" id="certifications">
-      <h2><i class="fas fa-certificate"></i> Certificaciones Profesionales</h2>
+      <h2><i class="fas fa-certificate"></i> Professional Certifications</h2>
       <hr />
       <div class="certifications-grid">
         <div class="certification-card">
@@ -400,72 +367,66 @@
             <h3>Microsoft Certified: Azure Fundamentals</h3>
           </div>
           <p class="certification-issuer">Microsoft</p>
-          <p class="certification-date">Octubre 2020</p>
+          <p class="certification-date">October 2020</p>
         </div>
-
         <div class="certification-card">
           <div class="certification-header">
             <i class="fas fa-chart-line"></i>
             <h3>Exam 778: Analyzing and Visualizing Data with Power BI</h3>
           </div>
           <p class="certification-issuer">Microsoft</p>
-          <p class="certification-date">Enero 2021</p>
+          <p class="certification-date">January 2021</p>
         </div>
-
         <div class="certification-card">
           <div class="certification-header">
             <i class="fas fa-tasks"></i>
             <h3>Scrum Foundation Professional Certificate</h3>
           </div>
           <p class="certification-issuer">CertiProf</p>
-          <p class="certification-date">Agosto 2020</p>
+          <p class="certification-date">August 2020</p>
         </div>
       </div>
     </div>
-
     <div class="section experiencia-laboral" id="experience">
-      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+      <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
       <hr />
       <ol>
         <li>
-          <strong>Ingeniero de Desarrollo de Software</strong>
-          <p><strong>Empresa:</strong> Exportadora Anakena Ltda.</p>
-          <p><strong>Ubicación:</strong> Paine, Chile</p>
-          <p><strong>Fecha:</strong> Octubre 2015 - Actualidad</p>
+          <strong>Software Development Engineer</strong>
+          <p><strong>Company:</strong> Exportadora Anakena Ltda.</p>
+          <p><strong>Location:</strong> Paine, Chile</p>
+          <p><strong>Date:</strong> October 2015 - Present</p>
           <p>
-            <strong>Descripción:</strong> Desarrollo de aplicaciones
-            empresariales utilizando C# y .NET Core, implementando arquitecturas
-            limpias y patrones de diseño. Experiencia en desarrollo de APIs
-            RESTful con ASP.NET Core y Entity Framework. Desarrollo de
-            aplicaciones móviles multiplataforma con Flutter para la gestión de
-            procesos internos. Implementación de soluciones de Business
-            Intelligence con Power BI y SQL Server.
+            <strong>Description:</strong> Development of business applications
+            using C# and .NET Core, implementing clean architectures and design
+            patterns. Experience in developing RESTful APIs with ASP.NET Core
+            and Entity Framework. Development of cross-platform mobile
+            applications with Flutter for internal process management.
+            Implementation of Business Intelligence solutions with Power BI and
+            SQL Server.
           </p>
         </li>
         <li>
-          <strong>Desarrollador de Software</strong>
+          <strong>Software Developer</strong>
           <p>
-            <strong>Empresa:</strong>
+            <strong>Company:</strong>
             <img
               src="./assets/img/logo_exsa.png"
-              alt="Logo Exportadora San Alberto"
+              alt="Exportadora San Alberto Logo"
               class="logo-empresa"
-              style="height: 28px; vertical-align: middle; margin-right: 6px"
             />Exportadora San Alberto S.A.
           </p>
-          <p><strong>Fecha:</strong> Junio 2012 - Octubre 2015</p>
+          <p><strong>Date:</strong> June 2012 - October 2015</p>
           <p>
-            <strong>Descripción:</strong> Desarrollo de aplicaciones web y
-            sistemas de gestión empresarial. Implementación de soluciones de
-            software para optimizar procesos internos. Trabajo en equipo con
-            otros desarrolladores y departamentos de la empresa. Desarrollo de
-            interfaces de usuario y backend utilizando tecnologías .NET y SQL
-            Server.
+            <strong>Description:</strong> Development of web applications and
+            business management systems. Implementation of software solutions to
+            optimize internal processes. Teamwork with other developers and
+            company departments. Development of user interfaces and backend
+            using .NET technologies and SQL Server.
           </p>
         </li>
       </ol>
     </div>
-
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 Jorge Ricardo Darderes Gómez</p>

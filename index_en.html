@@ -43,14 +43,15 @@
     </nav>
     <header>
       <div class="language-switcher">
-        <button
-          class="btn-lang"
-          id="btn-es"
-          onclick="window.location='index.html'"
-        >
-          ES
-        </button>
-        <button class="btn-lang active" id="btn-en">EN</button>
+        <div class="dropdown-lang">
+          <button class="btn-lang-icon" title="Change language">
+            <i class="fas fa-globe"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html" class="lang-option">ES</a>
+            <a href="index_en.html" class="lang-option active">EN</a>
+          </div>
+        </div>
       </div>
       <h1>Jorge Ricardo Darderes Gómez</h1>
       <p class="subtitle">Full Stack & Mobile Developer</p>
@@ -110,10 +111,9 @@
           <ul>
             <li><i class="fab fa-js"></i> JavaScript</li>
             <li><i class="fab fa-python"></i> Python</li>
-            <li><i class="fab fa-html5"></i> HTML5</li>
-            <li><i class="fas fa-code"></i> Dart</li>
+            <li><i class="fas fa-feather"></i> Dart</li>
             <li><i class="fab fa-js"></i> TypeScript</li>
-            <li><i class="fas fa-code"></i> C#</li>
+            <li><i class="fas fa-hashtag"></i> C#</li>
           </ul>
         </div>
         <div class="skill-category">
@@ -122,11 +122,7 @@
             <li><i class="fab fa-react"></i> React</li>
             <li><i class="fas fa-mobile-alt"></i> Flutter</li>
             <li><i class="fab fa-node-js"></i> Node.js</li>
-            <li><i class="fas fa-database"></i> OpenCV</li>
-            <li><i class="fab fa-git-alt"></i> Git</li>
             <li><i class="fas fa-window-maximize"></i> .NET Core</li>
-            <li><i class="fas fa-database"></i> Entity Framework</li>
-            <li><i class="fas fa-server"></i> ASP.NET</li>
           </ul>
         </div>
         <div class="skill-category">
@@ -136,6 +132,14 @@
             <li><i class="fas fa-database"></i> MongoDB</li>
             <li><i class="fas fa-database"></i> MySQL</li>
             <li><i class="fas fa-database"></i> PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud & Infrastructure</h3>
+          <ul>
+            <li><i class="fab fa-microsoft"></i> Azure</li>
+            <li><i class="fab fa-google"></i> Google Cloud</li>
+            <li><i class="fas fa-cloud"></i> MongoDB Atlas</li>
           </ul>
         </div>
         <div class="skill-category">
@@ -243,7 +247,15 @@
             <tr>
               <td>2007 - 2011</td>
               <td>
-                <strong>Computer Engineering</strong><br />INACAP, Puerto Montt
+                <strong>Computer Engineering</strong><br />
+                INACAP, Puerto Montt
+              </td>
+              <td>
+                <img
+                  src="./assets/img/inacap.jpeg"
+                  alt="Logo INACAP"
+                  class="logo-institution"
+                />
               </td>
             </tr>
           </table>
@@ -257,12 +269,27 @@
                 <strong>Professional Python Diploma</strong><br />Pontificia
                 Universidad Católica de Chile
               </td>
+              <td>
+                <img
+                  src="./assets/img/UC.png"
+                  alt="UC Logo"
+                  class="logo-institution-uc"
+                />
+              </td>
             </tr>
             <tr>
               <td>2015</td>
               <td>
                 <strong>Postgraduate in Mobile Application Development</strong
-                ><br />INACAP, Santiago
+                ><br />
+                INACAP, Santiago
+              </td>
+              <td>
+                <img
+                  src="./assets/img/inacap.jpeg"
+                  alt="INACAP Logo"
+                  class="logo-institution"
+                />
               </td>
             </tr>
           </table>
@@ -276,6 +303,13 @@
                 <strong>Frontend Development with React</strong><br />Desafío
                 Latam
               </td>
+              <td>
+                <img
+                  src="assets/img/desafio.png"
+                  alt="Logo Desafío Latam"
+                  class="logo-institution"
+                />
+              </td>
             </tr>
             <tr>
               <td>2023</td>
@@ -283,6 +317,13 @@
                 <strong
                   >Mobile Application Development Bootcamp with Flutter</strong
                 ><br />Universidad del Desarrollo (UDD)
+              </td>
+              <td>
+                <img
+                  src="assets/img/udd.png"
+                  alt="Logo UDD"
+                  class="logo-institution"
+                />
               </td>
             </tr>
             <tr>
@@ -293,6 +334,13 @@
                   Methodologies</strong
                 ><br />Pontificia Universidad Católica de Chile
               </td>
+              <td>
+                <img
+                  src="./assets/img/UC.png"
+                  alt="UC Logo"
+                  class="logo-institution-uc"
+                />
+              </td>
             </tr>
             <tr>
               <td>2021</td>
@@ -301,19 +349,40 @@
                   >Advanced Python Programming Tools for Data Processing</strong
                 ><br />Pontificia Universidad Católica de Chile
               </td>
+              <td>
+                <img
+                  src="./assets/img/UC.png"
+                  alt="UC Logo"
+                  class="logo-institution-uc"
+                />
+              </td>
             </tr>
             <tr>
               <td>2021</td>
               <td>
-                <strong>IoT Fundamentals: Big Data & Analytics</strong
-                ><br />Cisco Networking Academy
+                <strong>IoT Fundamentals: Big Data & Analytics</strong><br />
+                Cisco Networking Academy
+              </td>
+              <td>
+                <img
+                  src="assets/img/cisco.png"
+                  alt="Logo Cisco"
+                  class="logo-institution"
+                />
               </td>
             </tr>
             <tr>
               <td>2020</td>
               <td>
-                <strong>Programming Essentials in Python</strong><br />Cisco
-                Networking Academy
+                <strong>Programming Essentials in Python</strong><br />
+                Cisco Networking Academy
+              </td>
+              <td>
+                <img
+                  src="assets/img/cisco.png"
+                  alt="Logo Cisco"
+                  class="logo-institution"
+                />
               </td>
             </tr>
             <tr>
@@ -321,6 +390,13 @@
               <td>
                 <strong>Python Programming Tools for Data Processing</strong
                 ><br />Pontificia Universidad Católica de Chile
+              </td>
+              <td>
+                <img
+                  src="./assets/img/UC.png"
+                  alt="UC Logo"
+                  class="logo-institution-uc"
+                />
               </td>
             </tr>
             <tr>
@@ -330,6 +406,13 @@
                   >Introduction to Data Science: Statistical Programming with
                   R</strong
                 ><br />Universidad Nacional Autónoma de México
+              </td>
+              <td>
+                <img
+                  src="assets/img/autonoma.jpeg"
+                  alt="Logo UNAM"
+                  class="logo-institution"
+                />
               </td>
             </tr>
             <tr>
@@ -344,6 +427,13 @@
                   SQLServer 2014</small
                 >
               </td>
+              <td>
+                <img
+                  src="assets/img/bs.jpeg"
+                  alt="Logo BSG Institute"
+                  class="logo-institution"
+                />
+              </td>
             </tr>
             <tr>
               <td>2014</td>
@@ -351,6 +441,13 @@
                 <strong
                   >Advanced IT Security Course - Cisco CCNA Security</strong
                 ><br />Tecnológico de Monterrey
+              </td>
+              <td>
+                <img
+                  src="assets/img/tc.png"
+                  alt="Logo Tec de Monterrey"
+                  class="logo-institution"
+                />
               </td>
             </tr>
           </table>
@@ -393,7 +490,15 @@
       <ol>
         <li>
           <strong>Software Development Engineer</strong>
-          <p><strong>Company:</strong> Exportadora Anakena Ltda.</p>
+          <p>
+            <strong>Company:</strong><br />
+            <img
+              src="./assets/img/logo_anakena.png"
+              alt="Exportadora Anakena Logo"
+              class="logo-empresa"
+            /><br />
+            Exportadora Anakena Ltda.
+          </p>
           <p><strong>Location:</strong> Paine, Chile</p>
           <p><strong>Date:</strong> October 2015 - Present</p>
           <p>
@@ -409,12 +514,13 @@
         <li>
           <strong>Software Developer</strong>
           <p>
-            <strong>Company:</strong>
+            <strong>Company:</strong><br />
             <img
               src="./assets/img/logo_exsa.png"
               alt="Exportadora San Alberto Logo"
-              class="logo-empresa"
-            />Exportadora San Alberto S.A.
+              class="logo-empresa-exsa"
+            /><br />
+            Exportadora San Alberto S.A.
           </p>
           <p><strong>Date:</strong> June 2012 - October 2015</p>
           <p>
@@ -429,7 +535,7 @@
     </div>
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Jorge Ricardo Darderes Gómez</p>
+      <p>&copy; Jorge Ricardo Darderes Gómez</p>
       <div class="social-links">
         <a href="https://github.com/darkderes" target="_blank" rel="noopener"
           ><i class="fab fa-github"></i

@@ -258,6 +258,68 @@ img:hover {
   color: var(--accent-color);
 }
 
+/* Autoría UI/UX */
+.authorship-intro {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+.authorship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.authorship-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.78) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.authorship-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.16);
+}
+
+.authorship-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: var(--dark-color);
+  font-size: 1.15rem;
+}
+
+.authorship-card h3 i {
+  color: var(--accent-color);
+}
+
+.authorship-card p {
+  margin-bottom: 0;
+}
+
+.authorship-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.authorship-tags li {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--secondary-color);
+  border: 1px solid rgba(99, 102, 241, 0.14);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 /* Habilidades */
 .skills-grid {
   display: grid;

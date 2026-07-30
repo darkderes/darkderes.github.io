@@ -47,14 +47,25 @@
     </nav>
 
     <header>
-      <div class="language-switcher">
-        <div class="dropdown-lang">
-          <button class="btn-lang-icon" title="Cambiar idioma">
-            <i class="fas fa-globe"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="index.html" class="lang-option active">ES</a>
-            <a href="index_en.html" class="lang-option">EN</a>
+      <div class="header-toolbar">
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Activar modo oscuro"
+          title="Activar modo oscuro"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="language-switcher">
+          <div class="dropdown-lang">
+            <button class="btn-lang-icon" title="Cambiar idioma">
+              <i class="fas fa-globe"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html" class="lang-option active">ES</a>
+              <a href="index_en.html" class="lang-option">EN</a>
+            </div>
           </div>
         </div>
       </div>
@@ -637,5 +648,6 @@
         ></a>
       </div>
     </footer>
+    <script src="./assets/js/theme.js"></script>
   </body>
 </html>

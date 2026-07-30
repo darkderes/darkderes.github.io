@@ -28,8 +28,6 @@
   --nav-bg: rgba(255, 255, 255, 0.95);
   --soft-bg: rgba(99, 102, 241, 0.05);
   --soft-bg-hover: rgba(99, 102, 241, 0.12);
-  --tag-bg: rgba(99, 102, 241, 0.1);
-  --tag-text: var(--secondary-color);
   --logo-bg: #ffffff;
   --toolbar-bg: rgba(255, 255, 255, 0.95);
   --toolbar-color: var(--dark-color);
@@ -50,8 +48,6 @@ body[data-theme="dark"] {
   --page-bg: linear-gradient(135deg, #020617 0%, #111827 100%);
   --soft-bg: rgba(129, 140, 248, 0.16);
   --soft-bg-hover: rgba(129, 140, 248, 0.24);
-  --tag-bg: rgba(129, 140, 248, 0.16);
-  --tag-text: #e2e8f0;
   --logo-bg: #0f172a;
   --toolbar-bg: rgba(15, 23, 42, 0.9);
   --toolbar-color: #f8fafc;
@@ -299,68 +295,6 @@ img:hover {
   color: var(--accent-color);
 }
 
-/* Autoría UI/UX */
-.authorship-intro {
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  margin-bottom: 24px;
-  color: var(--text-color);
-}
-
-.authorship-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-}
-
-.authorship-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
-  padding: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.authorship-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.16);
-}
-
-.authorship-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-  color: var(--dark-color);
-  font-size: 1.15rem;
-}
-
-.authorship-card h3 i {
-  color: var(--accent-color);
-}
-
-.authorship-card p {
-  margin-bottom: 0;
-}
-
-.authorship-tags {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.authorship-tags li {
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  border: 1px solid rgba(99, 102, 241, 0.14);
-  border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 /* Habilidades */
 .skills-grid {
   display: grid;
@@ -442,6 +376,8 @@ img:hover {
   border: 1px solid var(--border-color);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card::before {
@@ -497,7 +433,8 @@ img:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 15px;
+  align-self: flex-start;
+  margin-top: auto;
   padding: 12px 24px;
   background: var(--gradient-primary);
   color: var(--white);
@@ -605,11 +542,11 @@ img:hover {
 .education .logo-institution {
   height: 50px;
   width: 110px;
-  background: var(--logo-bg);
+  background: #ffffff;
   border-radius: 8px;
   padding: 8px 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--border-color);
+  border: 2px solid #e5e7eb;
   object-fit: contain;
   display: inline-block;
 }
@@ -629,11 +566,11 @@ img:hover {
 .education .logo-institution-uc {
   height: 50px;
   width: 110px;
-  background: var(--logo-bg);
+  background: #ffffff;
   border-radius: 8px;
   padding: 8px 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--border-color);
+  border: 2px solid #e5e7eb;
   object-fit: contain;
   display: inline-block;
 }
@@ -974,7 +911,6 @@ footer p {
   animation: fadeIn 1s ease-out 0.9s backwards;
 }
 
-.btn-cv,
 .btn-contact {
   display: inline-flex;
   align-items: center;
@@ -992,7 +928,6 @@ footer p {
   overflow: hidden;
 }
 
-.btn-cv::before,
 .btn-contact::before {
   content: '';
   position: absolute;
@@ -1006,21 +941,9 @@ footer p {
   transition: width 0.6s, height 0.6s;
 }
 
-.btn-cv:hover::before,
 .btn-contact:hover::before {
   width: 300px;
   height: 300px;
-}
-
-.btn-cv {
-  background: var(--white);
-  color: var(--dark-color);
-  border: 2px solid var(--white);
-}
-
-.btn-cv:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.4);
 }
 
 .btn-contact {
@@ -1037,13 +960,11 @@ footer p {
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.4);
 }
 
-.btn-cv i,
 .btn-contact i {
   font-size: 1.2em;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-cv:hover i,
 .btn-contact:hover i {
   transform: scale(1.2) rotate(12deg);
 }
@@ -1104,7 +1025,6 @@ footer p {
     gap: 12px;
   }
 
-  .btn-cv,
   .btn-contact {
     padding: 12px 22px;
     font-size: 0.95rem;
@@ -1172,7 +1092,6 @@ footer p {
     padding: 0 20px;
   }
 
-  .btn-cv,
   .btn-contact {
     width: 100%;
     justify-content: center;
@@ -1256,13 +1175,13 @@ footer p {
 }
 
 .certification-card {
-  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 25px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-color);
 }
 
 .certification-card:hover {
